@@ -64,7 +64,9 @@ COPY data/ ./data/
 COPY run.sh .
 RUN chmod a+x run.sh
 
-# Exposer le port 6980
+# Exposer le port 6980 pour VBAN
 EXPOSE 6980
+# Exposer le port 16045 pour la webUI
+EXPOSE 16045
 
 CMD [ "./run.sh" ]
