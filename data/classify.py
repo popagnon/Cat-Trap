@@ -223,9 +223,9 @@ def run_detection(model, max_results, score_threshold, overlapping_factor, socke
         def create_detection_callback(source_name, webhook_url=None):
             def handle_detection(detection_data):
                 try:
-                    logging.info(f"CLAP détecté sur {source_name} avec score {detection_data['score']}")
+                    logging.info(f"chat détecté sur {source_name} avec score {detection_data['score']}")
                     if socketio:
-                        socketio.emit('clap', {
+                        socketio.emit('cat', {
                             'source_id': source_name,
                             'timestamp': detection_data['timestamp'],
                             'score': detection_data['score']
