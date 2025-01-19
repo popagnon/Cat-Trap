@@ -1,6 +1,6 @@
-name: "CatTrap"
+name: "Cat-Trap"
 version: "1.1.0"
-slug: "cattrap"
+slug: "cat-trap"
 description: "Fork des FreresPoulain & Korben - Application de détection du miaulement du chat en temps réel utilisant YAMNet, compatible avec les flux audio locaux et RTSP"
 url: "https://github.com/popagnon/Cat-Trap"
 arch:
