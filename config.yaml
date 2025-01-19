@@ -1,8 +1,8 @@
-name: "ClapTrap"
-version: "2.1.0"
-slug: "claptrap"
-description: "Application de détection d'applaudissements en temps réel utilisant YAMNet, compatible avec les flux audio locaux et RTSP"
-url: "https://github.com/lfpoulain/ClapTrap"
+name: "CatTrap"
+version: "1.1.0"
+slug: "cattrap"
+description: "Fork des FreresPoulain & Korben - Application de détection du miaulement du chat en temps réel utilisant YAMNet, compatible avec les flux audio locaux et RTSP"
+url: "https://github.com/popagnon/Cat-Trap"
 arch:
   - aarch64
   - amd64
@@ -16,4 +16,4 @@ host_network: true
 #  "6980/tcp": 6980
 init: false
 webui: "http://[HOST]:[PORT:16045]"
-maintainer: "lfpoulain"
+maintainer: "popagnon"
