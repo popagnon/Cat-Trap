@@ -14,8 +14,8 @@ export function initializeSocketIO() {
     });
     
     // Gestionnaire pour les claps
-    socket.on('clap', (data) => {
-        console.log('🎯 Clap event received:', data);
+    socket.on('cat', (data) => {
+        console.log('🎯 cat event received:', data);
         if (typeof window.showClap === 'function') {
             window.showClap(data.source_id);
         } else {
