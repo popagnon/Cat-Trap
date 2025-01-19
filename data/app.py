@@ -452,7 +452,7 @@ def refresh_vban():
 
 @app.route('/clap_detected')  # Added route for clap detection
 def clap_detected():
-    socketio.emit('clap', {'message': 'Applaudissement détecté!'})
+    socketio.emit('cat', {'message': 'chat détecté!'})
     return "Notification envoyée"
 
 @app.route('/status')
@@ -622,15 +622,15 @@ def validate_settings(settings):
 
 @socketio.on('clap_detected')
 def handle_clap(data):
-    print(f"🎯 Clap detected: {data}")  # Debug log
+    print(f"🎯 cat detected: {data}")  # Debug log
     try:
-        socketio.emit('clap', {
+        socketio.emit('cat', {
             'source_id': 'microphone',
             'timestamp': time.time()
         }, broadcast=True)
-        print(f"✅ Clap event emitted")
+        print(f"✅ cat event emitted")
     except Exception as e:
-        print(f"❌ Error emitting clap event: {str(e)}")
+        print(f"❌ Error emitting cat event: {str(e)}")
 
 @app.route('/api/vban/save', methods=['POST'])
 def save_vban_source():
