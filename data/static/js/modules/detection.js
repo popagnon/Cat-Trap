@@ -103,7 +103,7 @@ function handleDetectionEvent(data) {
                     console.log('Emoji reset to:', waitingEmoji.textContent);
                 }, 2000);
             }
-        } else if (data.label.toLowerCase().includes('cat')) {
+        } else if (data.label.toLowerCase().includes('cat, domestic animal')) {
             display.classList.add('cat');
             setTimeout(() => display.classList.remove('cat'), 1000);
         }
