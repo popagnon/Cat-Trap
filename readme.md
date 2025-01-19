@@ -1,4 +1,4 @@
-# 🎉 CatTrap Add-on pour Home Assistant 🎉
+# 🎉 Cat-Trap Add-on pour Home Assistant 🎉
 
 **Cat-Trap est un add-on pour Home Assistant dérivé de clap-Trap co-développé par les Freres Poulains & Korben.
 L'origine est disponible dans le repository des Freres Poulains
