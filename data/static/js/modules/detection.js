@@ -103,9 +103,9 @@ function handleDetectionEvent(data) {
                     console.log('Emoji reset to:', waitingEmoji.textContent);
                 }, 2000);
             }
-        } else if (data.label.toLowerCase().includes('clap')) {
-            display.classList.add('clap');
-            setTimeout(() => display.classList.remove('clap'), 1000);
+        } else if (data.label.toLowerCase().includes('cat')) {
+            display.classList.add('cat');
+            setTimeout(() => display.classList.remove('cat'), 1000);
         }
     }
 } 
