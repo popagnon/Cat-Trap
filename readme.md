@@ -1,6 +1,8 @@
-# 🎉 ClapTrap Add-on pour Home Assistant 🎉
+# 🎉 CatTrap Add-on pour Home Assistant 🎉
 
-**ClapTrap** est un add-on puissant pour Home Assistant qui permet la détection d'applaudissements en temps réel 👏 à partir de diverses sources audio 🎤. Il s'appuie sur l'IA 🤖 et le modèle YAMNet pour offrir une reconnaissance audio précise et rapide, tout en prenant en charge des intégrations personnalisées via des webhooks 🌐.
+**Cat-Trap est un add-on pour Home Assistant dérivé de clap-Trap co-développé par les Freres Poulains & Korben.
+L'origine est disponible dans le repository des Freres Poulains
+Il permet la détection de miaulements en temps réel 👏 à partir de diverses sources audio 🎤. Il s'appuie sur l'IA 🤖 et le modèle YAMNet pour offrir une reconnaissance audio précise et rapide, tout en prenant en charge des intégrations personnalisées via des webhooks 🌐.
 
 ## ✨ Fonctionnalités principales
 
