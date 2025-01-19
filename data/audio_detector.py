@@ -101,7 +101,7 @@ class AudioDetector:
             score_sum -= sum(
                 category.score
                 for category in classification.categories
-                if category.category_name == "Finger snapping"
+                if category.category_name == "cat"
             )
             
             # Log du score calculé
