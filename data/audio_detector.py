@@ -96,7 +96,7 @@ class AudioDetector:
             score_sum = sum(
                 category.score
                 for category in classification.categories
-                if category.category_name in ["Hands", "Clapping", "Cap gun"]
+                if category.category_name in ["cat", "Caterwaul", "roar"]
             )
             score_sum -= sum(
                 category.score
@@ -106,7 +106,7 @@ class AudioDetector:
             
             # Log du score calculé
             if score_sum > 0.1:  # Abaisser le seuil pour le debug
-                logging.debug(f"Score de clap calculé pour source {source_id}: {score_sum}")
+                logging.debug(f"Score de miaulement calculé pour source {source_id}: {score_sum}")
             
             # Préparer les labels pour le callback
             top3_labels = sorted(
@@ -130,7 +130,7 @@ class AudioDetector:
                 except Exception as e:
                     logging.error(f"Erreur dans le callback des labels pour source {source_id}: {str(e)}")
             
-            # Vérifier si on a détecté un clap
+            # Vérifier si on a détecté un miaulement
             current_time = time.time()
             if score_sum > 0.3 and (current_time - self.last_detection_time.get(source_id, 0)) > 1.0:
                 if self.sources[source_id]['detection_callback']:
